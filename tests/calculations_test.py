@@ -54,7 +54,7 @@ def test_get_nth_fibonacci_negative():
     result = get_nth_fibonacci(n)
 
     # Assert
-    assert result == ValueError("Input must be a positive integer")
+    assert result == ValueError("n cannot be negative")
 
 def test_get_nth_fibonacci_zero():
     """Test with n=0."""
