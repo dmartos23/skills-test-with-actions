@@ -34,6 +34,28 @@ def test_area_of_circle_zero_radius():
     assert result == 0
 
 
+def test_area_of_circle_negative_radius():
+    """Test with a negative radius."""
+    # Arrange
+    radius = -1
+
+    # Act
+    result = area_of_circle(radius)
+
+    # Assert
+    assert result == ValueError("Radius cannot be negative")
+
+def test_get_nth_fibonacci_negative():
+    """Test with a negative n."""
+    # Arrange
+    n = -1
+
+    # Act
+    result = get_nth_fibonacci(n)
+
+    # Assert
+    assert result == ValueError("Input must be a positive integer")
+
 def test_get_nth_fibonacci_zero():
     """Test with n=0."""
     # Arrange
